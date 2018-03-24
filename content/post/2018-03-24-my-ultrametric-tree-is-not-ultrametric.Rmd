@@ -79,7 +79,7 @@ We can also look at the raw branch lengths to see how they have changed:
 library(pander)
 length.matrix <- cbind(phy$edge.length, phy2$edge.length, phy3$edge.length)
 colnames(length.matrix) <- c("Original", "Rounded", "Recalibrated")
- pandoc.table(length.matrix)
+ pandoc.table(length.matrix,  style = "rmarkdown")
 ```
 
 
