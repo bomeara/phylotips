@@ -76,7 +76,7 @@
 
 <meta itemprop="datePublished" content="2018-03-24T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2018-03-24T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="567">
+<meta itemprop="wordCount" content="545">
 
 
 
@@ -159,7 +159,7 @@
               <a href="/categories/r/"> R </a>
             
           </div>
-        <span class="more-meta"> 567 words </span>
+        <span class="more-meta"> 545 words </span>
         <span class="more-meta"> 3 mins read </span>
         
       </div>
@@ -223,58 +223,7 @@ print(ape::is.ultrametric(phy3))</code></pre>
 <pre class="r"><code>plot(phy$edge.length, phy3$edge.length, xlab=&quot;Original tree&quot;, ylab=&quot;Post-chronos tree&quot;, pch=20, bty=&quot;n&quot;)
 abline(a=0, b=1, col=&quot;gray&quot;, lwd=0.5)</code></pre>
 <p><img src="/rmarkdown-libs/figure-html4/unnamed-chunk-7-1.png" width="672" /></p>
-<p>We can also look at the raw branch lengths to see how they have changed:</p>
-<table>
-<thead>
-<tr class="header">
-<th align="center">Original</th>
-<th align="center">Imported</th>
-<th align="center">Recalibrated</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="center">0.9626322</td>
-<td align="center">0.96</td>
-<td align="center">0.954</td>
-</tr>
-<tr class="even">
-<td align="center">0.8078390</td>
-<td align="center">0.81</td>
-<td align="center">0.810</td>
-</tr>
-<tr class="odd">
-<td align="center">0.8078390</td>
-<td align="center">0.81</td>
-<td align="center">0.810</td>
-</tr>
-<tr class="even">
-<td align="center">0.6422870</td>
-<td align="center">0.64</td>
-<td align="center">0.644</td>
-</tr>
-<tr class="odd">
-<td align="center">0.1528407</td>
-<td align="center">0.15</td>
-<td align="center">0.140</td>
-</tr>
-<tr class="even">
-<td align="center">0.9753435</td>
-<td align="center">0.98</td>
-<td align="center">0.980</td>
-</tr>
-<tr class="odd">
-<td align="center">0.9753435</td>
-<td align="center">0.98</td>
-<td align="center">0.980</td>
-</tr>
-<tr class="even">
-<td align="center">1.1281842</td>
-<td align="center">1.10</td>
-<td align="center">1.120</td>
-</tr>
-</tbody>
-</table>
+<p>Interestingly, <code>ape</code>’s <code>chronos()</code> and <code>chronospl</code> functions changed overall tree height dramatically and so aren’t a good quick solution for this.</p>
 </div>
 
     </div>

@@ -24,14 +24,14 @@
   </url>
   
   <url>
-    <loc>https://phylotips.info/tags/about/</loc>
+    <loc>https://phylotips.info/categories/about/</loc>
     <lastmod>2018-03-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://phylotips.info/categories/about/</loc>
+    <loc>https://phylotips.info/tags/about/</loc>
     <lastmod>2018-03-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
@@ -80,14 +80,14 @@
   </url>
   
   <url>
-    <loc>https://phylotips.info/tags/r/</loc>
+    <loc>https://phylotips.info/categories/r/</loc>
     <lastmod>2018-03-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://phylotips.info/categories/r/</loc>
+    <loc>https://phylotips.info/tags/r/</loc>
     <lastmod>2018-03-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>

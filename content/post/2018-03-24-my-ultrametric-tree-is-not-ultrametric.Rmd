@@ -74,13 +74,7 @@ plot(phy$edge.length, phy3$edge.length, xlab="Original tree", ylab="Post-chronos
 abline(a=0, b=1, col="gray", lwd=0.5)
 ```
 
-We can also look at the raw branch lengths to see how they have changed:
-```{r echo=FALSE, results='asis'}
-library(knitr)
-length.matrix <- cbind(phy$edge.length, phy2$edge.length, phy3$edge.length)
-colnames(length.matrix) <- c("Original", "Imported", "Recalibrated")
-kable(length.matrix, align=rep("c",3))
-```
+Interestingly, `ape`'s `chronos()` and `chronospl` functions changed overall tree height dramatically and so aren't a good quick solution for this.
 
 
 
