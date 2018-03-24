@@ -76,10 +76,10 @@ abline(a=0, b=1, col="gray", lwd=0.5)
 
 We can also look at the raw branch lengths to see how they have changed:
 ```{r echo=FALSE, results='asis'}
-library(pander)
+library(knitr)
 length.matrix <- cbind(phy$edge.length, phy2$edge.length, phy3$edge.length)
-colnames(length.matrix) <- c("Orig.", "Import", "Recalibrated")
- pandoc.table(length.matrix,  style = "rmarkdown")
+colnames(length.matrix) <- c("Original", "Imported", "Recalibrated")
+kable(length.matrix, align=rep("c",3))
 ```
 
 
