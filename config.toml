@@ -6,6 +6,9 @@ enableRobotsTXT = true
 enableEmoji = true
 theme = "hugo-theme-even"
 
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+
+
 hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
 paginate = 5                                              # 首页每页显示的文章数
 disqusShortname = ""      # disqus_shortname
@@ -135,7 +138,6 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
     l-tumblr = "http://localhost:1313"
     m-instagram = "http://localhost:1313"
 
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 # 将下面这段配置取消注释可以使 hugo 生成 .md 文件
 # Uncomment these options to make hugo output .md files.
