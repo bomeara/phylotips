@@ -79,7 +79,7 @@ We can also look at the raw branch lengths to see how they have changed:
 library(knitr)
 length.matrix <- cbind(phy$edge.length, phy2$edge.length, phy3$edge.length)
 colnames(length.matrix) <- c("Original", "Rounded", "Recalibrated")
-kable(length.matrix)
+kable(length.matrix, "pandoc")
 ```
 
 
