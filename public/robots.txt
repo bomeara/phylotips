@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://pensive-ritchie-503299.netlify.com/sitemap.xml
