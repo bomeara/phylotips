@@ -1,4 +1,4 @@
-baseURL = "https://pensive-ritchie-503299.netlify.com/"
+baseURL = "https://phylotips.info"
 languageCode = "en"
 defaultContentLanguage = "en"                             # en / zh-cn / ... (This field determines which i18n file to use)
 title = "PhyloTips: Tips for those using phylogenies in their work"
@@ -126,11 +126,11 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   [params.social]                                         # 社交链接
     a-email = "mailto:omeara.brian@gmail.com"
   #  b-stack-overflow = "http://localhost:1313"
-    c-twitter = "http://localhost:1313"
+    c-twitter = "https://twitter.com/omearabrian"
     #d-facebook = "http://localhost:1313"
-    e-linkedin = "http://localhost:1313"
+    e-linkedin = "https://www.linkedin.com/in/brian-o-meara-62a008104/"
    # f-google = "http://localhost:1313"
-    g-github = "http://localhost:1313"
+    g-github = "https://github.com/bomeara"
    # h-weibo = "http://localhost:1313"
    # i-zhihu = "http://localhost:1313"
    # j-douban = "http://localhost:1313"

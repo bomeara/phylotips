@@ -1,78 +1,85 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<?xml-stylesheet type="text/xsl" href="https://pensive-ritchie-503299.netlify.com/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://phylotips.info/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://pensive-ritchie-503299.netlify.com/about/</loc>
+    <loc>https://phylotips.info/about/</loc>
     <lastmod>2017-08-28T21:41:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://pensive-ritchie-503299.netlify.com/post/r-test/</loc>
+    <loc>https://phylotips.info/post/intro-to-this-site/</loc>
     <lastmod>2018-03-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://pensive-ritchie-503299.netlify.com/post/2015-07-23-r-rmarkdown/</loc>
+    <loc>https://phylotips.info/post/r-test/</loc>
+    <lastmod>2018-03-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://phylotips.info/post/2015-07-23-r-rmarkdown/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://pensive-ritchie-503299.netlify.com/categories/</loc>
+    <loc>https://phylotips.info/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://pensive-ritchie-503299.netlify.com/</loc>
+    <loc>https://phylotips.info/</loc>
     <lastmod>2017-08-28T21:41:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://pensive-ritchie-503299.netlify.com/tags/plot/</loc>
+    <loc>https://phylotips.info/tags/plot/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://pensive-ritchie-503299.netlify.com/post/</loc>
+    <loc>https://phylotips.info/post/</loc>
     <lastmod>2018-03-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://pensive-ritchie-503299.netlify.com/categories/r/</loc>
+    <loc>https://phylotips.info/categories/r/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://pensive-ritchie-503299.netlify.com/tags/r-markdown/</loc>
+    <loc>https://phylotips.info/tags/r-markdown/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://pensive-ritchie-503299.netlify.com/tags/regression/</loc>
+    <loc>https://phylotips.info/tags/regression/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://pensive-ritchie-503299.netlify.com/tags/</loc>
+    <loc>https://phylotips.info/tags/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
