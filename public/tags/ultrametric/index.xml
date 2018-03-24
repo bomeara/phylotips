@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on PhyloTips: Tips for those using phylogenies in their work</title>
-    <link>https://phylotips.info/post/</link>
-    <description>Recent content in Posts on PhyloTips: Tips for those using phylogenies in their work</description>
+    <title>Ultrametric on PhyloTips: Tips for those using phylogenies in their work</title>
+    <link>https://phylotips.info/tags/ultrametric/</link>
+    <description>Recent content in Ultrametric on PhyloTips: Tips for those using phylogenies in their work</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 24 Mar 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://phylotips.info/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://phylotips.info/tags/ultrametric/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Intro to this site</title>
-      <link>https://phylotips.info/post/intro-to-this-site/</link>
-      <pubDate>Sat, 24 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://phylotips.info/post/intro-to-this-site/</guid>
-      <description>Welcome to PhyloTips.info. From teaching my PhyloMeth course and working with students and colleagues in general, as well as the great example of Liam Revell’s Phytools Blog, I decided to make a site where I could post tips to deal with problems of people working on phylogenies. Since I mostly use R for this (though this may change as Julia, Python, etc. grow)</description>
-    </item>
     
     <item>
       <title>My ultrametric tree is not ultrametric</title>

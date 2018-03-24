@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>My ultrametric tree is not ultrametric - PhyloTips: Tips for those using phylogenies in their work</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Brian O&#39;Meara" />
+  <meta name="description" content="Getting a tree with branch lengths proportional to time is a key step for many methods. With NSF’s generous assistance, we’re working on methods to make this easier (the Datelife.org website, the datelife R package), but one can look for chronograms at TreeBase and Open Tree of Life, or even make your own using r8s, treepl, Beast, RevBayes, or more. The convention in phylogenetics is to call trees with equal root to tip lengths “ultrametric." />
+
+  <meta name="keywords" content="R, phylogeny, help" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.37.1" />
+
+
+<link rel="canonical" href="https://phylotips.info/post/my-ultrametric-tree-is-not-ultrametric/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+<link href="/dist/even.min.css?v=3.1.1" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+
+
+
+<meta property="og:title" content="My ultrametric tree is not ultrametric" />
+<meta property="og:description" content="Getting a tree with branch lengths proportional to time is a key step for many methods. With NSF’s generous assistance, we’re working on methods to make this easier (the Datelife.org website, the datelife R package), but one can look for chronograms at TreeBase and Open Tree of Life, or even make your own using r8s, treepl, Beast, RevBayes, or more. The convention in phylogenetics is to call trees with equal root to tip lengths “ultrametric." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://phylotips.info/post/my-ultrametric-tree-is-not-ultrametric/" />
+
+
+
+<meta property="article:published_time" content="2018-03-24T00:00:00&#43;00:00"/>
+
+<meta property="article:modified_time" content="2018-03-24T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="My ultrametric tree is not ultrametric">
+<meta itemprop="description" content="Getting a tree with branch lengths proportional to time is a key step for many methods. With NSF’s generous assistance, we’re working on methods to make this easier (the Datelife.org website, the datelife R package), but one can look for chronograms at TreeBase and Open Tree of Life, or even make your own using r8s, treepl, Beast, RevBayes, or more. The convention in phylogenetics is to call trees with equal root to tip lengths “ultrametric.">
+
+
+<meta itemprop="datePublished" content="2018-03-24T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-03-24T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="567">
+
+
+
+<meta itemprop="keywords" content="R,ultrametric,chronogram,geiger,ape," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="My ultrametric tree is not ultrametric"/>
+<meta name="twitter:description" content="Getting a tree with branch lengths proportional to time is a key step for many methods. With NSF’s generous assistance, we’re working on methods to make this easier (the Datelife.org website, the datelife R package), but one can look for chronograms at TreeBase and Open Tree of Life, or even make your own using r8s, treepl, Beast, RevBayes, or more. The convention in phylogenetics is to call trees with equal root to tip lengths “ultrametric."/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">PhyloTips</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">PhyloTips</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">My ultrametric tree is not ultrametric</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2018-03-24 </span>
+        <div class="post-category">
+            
+              <a href="/categories/r/"> R </a>
+            
+          </div>
+        <span class="more-meta"> 567 words </span>
+        <span class="more-meta"> 3 mins read </span>
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  
+  <div class="post-toc-content always-active">
+    
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <p>Getting a tree with branch lengths proportional to time is a key step for many methods. With NSF’s generous assistance, we’re working on methods to make this easier (the <a href="http://datelife.org">Datelife.org</a> website, the <a href="https://github.com/phylotastic/datelife">datelife</a> R package), but one can look for chronograms at <a href="http://treebase.org">TreeBase</a> and <a href="https://tree.opentreeoflife.org/">Open Tree of Life</a>, or even make your own using r8s, treepl, Beast, RevBayes, or more. The convention in phylogenetics is to call trees with equal root to tip lengths “ultrametric.” A tree with branch lengths proportional to time (a “chronogram”) with all taxa occurring at the same time point will be ultrametric, but one can have ultrametric trees where branch lengths don’t represent time (such as a tree from UPGMA) or a tree with branch lengths proportional to time but where the root to tip lenghts are not all the same (such as a tree with organisms sampled at different times, whether it is a phylogeny of sauropods or of HIV through time). Many approaches test for whether trees are ultrametric before use: you might get a “‘phy’ must be ultrametric” error if a tree is not ultrametric.</p>
+<p>Some trees aren’t because they lack branch lengths entirely, even though when plotted they look like they have them:</p>
+<pre class="r"><code>set.seed(1859)
+library(ape)
+phy &lt;- ape::stree(5, type=&quot;left&quot;)
+plot(phy)</code></pre>
+<p><img src="/rmarkdown-libs/figure-html4/unnamed-chunk-1-1.png" width="672" /></p>
+<p>but we can see the tree does not have branch lengths:</p>
+<pre class="r"><code>ape::print.phylo(phy)</code></pre>
+<pre><code>## 
+## Phylogenetic tree with 5 tips and 4 internal nodes.
+## 
+## Tip labels:
+## [1] &quot;t1&quot; &quot;t2&quot; &quot;t3&quot; &quot;t4&quot; &quot;t5&quot;
+## 
+## Rooted; no branch lengths.</code></pre>
+<p>Other trees have branch lengths but are clearly not ultrametric:</p>
+<pre class="r"><code>phy &lt;- ape::rtree(5)
+plot(phy)</code></pre>
+<p><img src="/rmarkdown-libs/figure-html4/unnamed-chunk-3-1.png" width="672" /></p>
+<pre class="r"><code>print(ape::is.ultrametric(phy))</code></pre>
+<pre><code>## [1] FALSE</code></pre>
+<p>Ok – that’s fine, we just have to get trees with branch lengths proportional to time.</p>
+<p>However, sometimes there are trees we load that <em>should</em> be ultrametric but aren’t. Take this tree, which is ultrametric:</p>
+<pre class="r"><code>phy &lt;- ape::rcoal(5)
+plot(phy)</code></pre>
+<p><img src="/rmarkdown-libs/figure-html4/unnamed-chunk-4-1.png" width="672" /></p>
+<pre class="r"><code>print(ape::is.ultrametric(phy))</code></pre>
+<pre><code>## [1] TRUE</code></pre>
+<p>However, if we convert the tree to <a href="http://evolution.genetics.washington.edu/phylip/newicktree.html">Newick format</a> and convert back, it may no longer be ultrametric:</p>
+<pre class="r"><code>phy2 &lt;- ape::read.tree(text=write.tree(phy, digits=2))
+plot(phy2)</code></pre>
+<p><img src="/rmarkdown-libs/figure-html4/unnamed-chunk-5-1.png" width="672" /></p>
+<pre class="r"><code>print(ape::is.ultrametric(phy2))</code></pre>
+<pre><code>## [1] FALSE</code></pre>
+<p>What happened? It’s a result of precision of the tree. We converted it to Newick with a precision of two digits. However, when we did the <code>is.ultrametric</code> test, by default its precision is <code>.Machine$double.eps^0.5</code>, which on this machine is 1.490116110^{-8}: far more precision than in the exported format. This example is contrived, but the same can happen with input files: a file may be saved with, say, branch lengths precise to the sixth decimal place, but the ultrametric test is (by default) higher precision, so the rounding error causes it to look non-ultrametric.</p>
+<div id="solution" class="section level2">
+<h2>Solution</h2>
+<p>A fast solution to this is to re-estimate branch lengths. If the tree is very non-ultrametric (i.e., branch lengths come from molecular substitutions not from a tree that should have been a chronogram) then this requires substantial thought, fossils, etc. However, for rounding error, we can do a quick run through <code>ape</code>’s <code>chronoMPL()</code> function:</p>
+<pre class="r"><code>phy3 &lt;- ape::chronoMPL(phy2)
+print(ape::is.ultrametric(phy3))</code></pre>
+<pre><code>## [1] TRUE</code></pre>
+<p>We can compare the edge lengths (branch lengths) between the original and final trees to see how little things have changed:</p>
+<pre class="r"><code>plot(phy$edge.length, phy3$edge.length, xlab=&quot;Original tree&quot;, ylab=&quot;Post-chronos tree&quot;, pch=20, bty=&quot;n&quot;)
+abline(a=0, b=1, col=&quot;gray&quot;, lwd=0.5)</code></pre>
+<p><img src="/rmarkdown-libs/figure-html4/unnamed-chunk-7-1.png" width="672" /></p>
+<p>We can also look at the raw branch lengths to see how they have changed:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="right">Original</th>
+<th align="right">Rounded</th>
+<th align="right">Recalibrated</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">0.9626322</td>
+<td align="right">0.96</td>
+<td align="right">0.954</td>
+</tr>
+<tr class="even">
+<td align="right">0.8078390</td>
+<td align="right">0.81</td>
+<td align="right">0.810</td>
+</tr>
+<tr class="odd">
+<td align="right">0.8078390</td>
+<td align="right">0.81</td>
+<td align="right">0.810</td>
+</tr>
+<tr class="even">
+<td align="right">0.6422870</td>
+<td align="right">0.64</td>
+<td align="right">0.644</td>
+</tr>
+<tr class="odd">
+<td align="right">0.1528407</td>
+<td align="right">0.15</td>
+<td align="right">0.140</td>
+</tr>
+<tr class="even">
+<td align="right">0.9753435</td>
+<td align="right">0.98</td>
+<td align="right">0.980</td>
+</tr>
+<tr class="odd">
+<td align="right">0.9753435</td>
+<td align="right">0.98</td>
+<td align="right">0.980</td>
+</tr>
+<tr class="even">
+<td align="right">1.1281842</td>
+<td align="right">1.10</td>
+<td align="right">1.120</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+    </div>
+
+    
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Brian O'Meara</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">2018-03-24</span>
+  </p>
+  
+  
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          
+          <a href="/tags/r/">R</a>
+          
+          <a href="/tags/ultrametric/">ultrametric</a>
+          
+          <a href="/tags/chronogram/">chronogram</a>
+          
+          <a href="/tags/geiger/">geiger</a>
+          
+          <a href="/tags/ape/">ape</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/intro-to-this-site/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Intro to this site</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:omeara.brian@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://twitter.com/omearabrian" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.linkedin.com/in/brian-o-meara-62a008104/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://github.com/bomeara" class="iconfont icon-github" title="github"></a>
+  <a href="https://phylotips.info/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    
+      2017 - 
+    2018
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Brian O'Meara</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/lib/highlight/highlight.pack.js?v=20171001"></script><script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+<script type="text/javascript" src="/dist/even.min.js?v=3.1.1"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+---
+title: My ultrametric tree is not ultrametric
+author: Brian O'Meara
+date: '2018-03-24'
+slug: my-ultrametric-tree-is-not-ultrametric
+categories:
+  - R
+tags:
+  - R
+  - ultrametric
+  - chronogram
+  - geiger
+  - ape
+---
+
+
+
+<p>Getting a tree with branch lengths proportional to time is a key step for many methods. With NSF’s generous assistance, we’re working on methods to make this easier (the <a href="http://datelife.org">Datelife.org</a> website, the <a href="https://github.com/phylotastic/datelife">datelife</a> R package), but one can look for chronograms at <a href="http://treebase.org">TreeBase</a> and <a href="https://tree.opentreeoflife.org/">Open Tree of Life</a>, or even make your own using r8s, treepl, Beast, RevBayes, or more. The convention in phylogenetics is to call trees with equal root to tip lengths “ultrametric.” A tree with branch lengths proportional to time (a “chronogram”) with all taxa occurring at the same time point will be ultrametric, but one can have ultrametric trees where branch lengths don’t represent time (such as a tree from UPGMA) or a tree with branch lengths proportional to time but where the root to tip lenghts are not all the same (such as a tree with organisms sampled at different times, whether it is a phylogeny of sauropods or of HIV through time). Many approaches test for whether trees are ultrametric before use: you might get a “‘phy’ must be ultrametric” error if a tree is not ultrametric.</p>
+<p>Some trees aren’t because they lack branch lengths entirely, even though when plotted they look like they have them:</p>
+<pre class="r"><code>set.seed(1859)
+library(ape)
+phy &lt;- ape::stree(5, type=&quot;left&quot;)
+plot(phy)</code></pre>
+<p><img src="/rmarkdown-libs/figure-html4/unnamed-chunk-1-1.png" width="672" /></p>
+<p>but we can see the tree does not have branch lengths:</p>
+<pre class="r"><code>ape::print.phylo(phy)</code></pre>
+<pre><code>## 
+## Phylogenetic tree with 5 tips and 4 internal nodes.
+## 
+## Tip labels:
+## [1] &quot;t1&quot; &quot;t2&quot; &quot;t3&quot; &quot;t4&quot; &quot;t5&quot;
+## 
+## Rooted; no branch lengths.</code></pre>
+<p>Other trees have branch lengths but are clearly not ultrametric:</p>
+<pre class="r"><code>phy &lt;- ape::rtree(5)
+plot(phy)</code></pre>
+<p><img src="/rmarkdown-libs/figure-html4/unnamed-chunk-3-1.png" width="672" /></p>
+<pre class="r"><code>print(ape::is.ultrametric(phy))</code></pre>
+<pre><code>## [1] FALSE</code></pre>
+<p>Ok – that’s fine, we just have to get trees with branch lengths proportional to time.</p>
+<p>However, sometimes there are trees we load that <em>should</em> be ultrametric but aren’t. Take this tree, which is ultrametric:</p>
+<pre class="r"><code>phy &lt;- ape::rcoal(5)
+plot(phy)</code></pre>
+<p><img src="/rmarkdown-libs/figure-html4/unnamed-chunk-4-1.png" width="672" /></p>
+<pre class="r"><code>print(ape::is.ultrametric(phy))</code></pre>
+<pre><code>## [1] TRUE</code></pre>
+<p>However, if we convert the tree to <a href="http://evolution.genetics.washington.edu/phylip/newicktree.html">Newick format</a> and convert back, it may no longer be ultrametric:</p>
+<pre class="r"><code>phy2 &lt;- ape::read.tree(text=write.tree(phy, digits=2))
+plot(phy2)</code></pre>
+<p><img src="/rmarkdown-libs/figure-html4/unnamed-chunk-5-1.png" width="672" /></p>
+<pre class="r"><code>print(ape::is.ultrametric(phy2))</code></pre>
+<pre><code>## [1] FALSE</code></pre>
+<p>What happened? It’s a result of precision of the tree. We converted it to Newick with a precision of two digits. However, when we did the <code>is.ultrametric</code> test, by default its precision is <code>.Machine$double.eps^0.5</code>, which on this machine is 1.490116110^{-8}: far more precision than in the exported format. This example is contrived, but the same can happen with input files: a file may be saved with, say, branch lengths precise to the sixth decimal place, but the ultrametric test is (by default) higher precision, so the rounding error causes it to look non-ultrametric.</p>
+<div id="solution" class="section level2">
+<h2>Solution</h2>
+<p>A fast solution to this is to re-estimate branch lengths. If the tree is very non-ultrametric (i.e., branch lengths come from molecular substitutions not from a tree that should have been a chronogram) then this requires substantial thought, fossils, etc. However, for rounding error, we can do a quick run through <code>ape</code>’s <code>chronoMPL()</code> function:</p>
+<pre class="r"><code>phy3 &lt;- ape::chronoMPL(phy2)
+print(ape::is.ultrametric(phy3))</code></pre>
+<pre><code>## [1] TRUE</code></pre>
+<p>We can compare the edge lengths (branch lengths) between the original and final trees to see how little things have changed:</p>
+<pre class="r"><code>plot(phy$edge.length, phy3$edge.length, xlab=&quot;Original tree&quot;, ylab=&quot;Post-chronos tree&quot;, pch=20, bty=&quot;n&quot;)
+abline(a=0, b=1, col=&quot;gray&quot;, lwd=0.5)</code></pre>
+<p><img src="/rmarkdown-libs/figure-html4/unnamed-chunk-7-1.png" width="672" /></p>
+<p>We can also look at the raw branch lengths to see how they have changed:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="right">Original</th>
+<th align="right">Rounded</th>
+<th align="right">Recalibrated</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">0.9626322</td>
+<td align="right">0.96</td>
+<td align="right">0.954</td>
+</tr>
+<tr class="even">
+<td align="right">0.8078390</td>
+<td align="right">0.81</td>
+<td align="right">0.810</td>
+</tr>
+<tr class="odd">
+<td align="right">0.8078390</td>
+<td align="right">0.81</td>
+<td align="right">0.810</td>
+</tr>
+<tr class="even">
+<td align="right">0.6422870</td>
+<td align="right">0.64</td>
+<td align="right">0.644</td>
+</tr>
+<tr class="odd">
+<td align="right">0.1528407</td>
+<td align="right">0.15</td>
+<td align="right">0.140</td>
+</tr>
+<tr class="even">
+<td align="right">0.9753435</td>
+<td align="right">0.98</td>
+<td align="right">0.980</td>
+</tr>
+<tr class="odd">
+<td align="right">0.9753435</td>
+<td align="right">0.98</td>
+<td align="right">0.980</td>
+</tr>
+<tr class="even">
+<td align="right">1.1281842</td>
+<td align="right">1.10</td>
+<td align="right">1.120</td>
+</tr>
+</tbody>
+</table>
+</div>

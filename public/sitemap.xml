@@ -17,10 +17,10 @@
   </url>
   
   <url>
-    <loc>https://phylotips.info/categories/about/</loc>
+    <loc>https://phylotips.info/post/my-ultrametric-tree-is-not-ultrametric/</loc>
     <lastmod>2018-03-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0</priority>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -31,7 +31,35 @@
   </url>
   
   <url>
+    <loc>https://phylotips.info/categories/about/</loc>
+    <lastmod>2018-03-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://phylotips.info/tags/ape/</loc>
+    <lastmod>2018-03-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://phylotips.info/categories/</loc>
+    <lastmod>2018-03-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://phylotips.info/tags/chronogram/</loc>
+    <lastmod>2018-03-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://phylotips.info/tags/geiger/</loc>
     <lastmod>2018-03-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
@@ -52,7 +80,28 @@
   </url>
   
   <url>
+    <loc>https://phylotips.info/tags/r/</loc>
+    <lastmod>2018-03-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://phylotips.info/categories/r/</loc>
+    <lastmod>2018-03-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://phylotips.info/tags/</loc>
+    <lastmod>2018-03-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://phylotips.info/tags/ultrametric/</loc>
     <lastmod>2018-03-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
