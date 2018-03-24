@@ -3,14 +3,10 @@ title: Intro to this site
 author: Brian O'Meara
 date: '2018-03-24'
 slug: intro-to-this-site
-categories: []
-tags: []
+categories: [about]
+tags: [about]
 ---
 
 Welcome to [PhyloTips.info](http://www.phylotips.info). From teaching my [PhyloMeth](http://www.phylometh.info) course and working with students and colleagues in general, as well as the great example of Liam Revell's [Phytools Blog](http://blog.phytools.org), I decided to make a site where I could post tips to deal with problems of people working on phylogenies. Since I mostly use R for this (though this may change as Julia, Python, etc. grow) I have created the site using the [blogdown](https://github.com/rstudio/blogdown) package of [Yihui Xie | 谢益辉](https://yihui.name/en/), which allows R Markdown to be beautifully rendered into a hugo website (I'm currently using the [Even](https://github.com/olOwOlo/hugo-theme-even/) theme), with deployment on the free tier of [netlify](https://www.netlify.com). 
 
 This makes overall deployment easy: `blogdown:::new_post_addin()` for a new post (if done within RStudio) and `blogdown::build_site()` to render the site, then `git add -A`, `git commit -m"updated site" -a`, and `git push`, and everything gets redeployed.
-
-```
-blogdown:::new_post_addin()
-blogdown::build_site()

@@ -31,7 +31,22 @@
   </url>
   
   <url>
+    <loc>https://phylotips.info/tags/about/</loc>
+    <lastmod>2018-03-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://phylotips.info/categories/about/</loc>
+    <lastmod>2018-03-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://phylotips.info/categories/</loc>
+    <lastmod>2018-03-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -80,7 +95,7 @@
   
   <url>
     <loc>https://phylotips.info/tags/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+    <lastmod>2018-03-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
