@@ -20,7 +20,7 @@ sequenceDiagrams:
   enable: no
   options: ''
 slug: paup-batch-files
-tags: []
+tags: paup
 autoCollapseToc: no
 toc: no
 ---
@@ -255,7 +255,7 @@ charpartition being examined. For example, if we have three charsets
 called 28s, coI, and ef1, a batch file would be:
 
 > \#nexus\
-> begin PAUP21;\
+> begin paup;\
 > log file=pairwiseILD.log;\
 > charpartition noef1 = 28s:28s, coI:coI;\
 > charpartition no28s = coI:coI, ef1:ef1;\
@@ -380,7 +380,7 @@ islands of good trees PAUP is missing. A sample batch file follows. You
 may want to change the nreps and timelimit.
 
 > \#nexus\
-> begin PAUP21;\
+> begin paup;\
 > log file=hsearch.tlimit.log;\
 > set maxtrees=10000 increase=auto;\
 > hsearch rstatus=no limitperrep=yes nreps=5000 randomize=trees
@@ -436,7 +436,7 @@ taxon additions per bootstrap replicate (currently set at a low value of
 10):
 
 > \#nexus\
-> begin PAUP21;\
+> begin paup;\
 > set storetreewts=yes;\
 > bootstrap nreps=**500** treefile=bootstrap1.tre replace=no/
 > start=stepwise addseq=random nreps=**10** savereps=no randomize=addseq
@@ -450,7 +450,7 @@ following batch file should set all these options and load the trees
 saved as bootstrap1.tre in the active folder.
 
 > \#nexus\
-> begin PAUP21;\
+> begin paup;\
 > gettrees allblocks=yes duptrees=keep storetreewts=yes mode=7
 > file=bootstrap1.tre;\
 > end;
@@ -459,5 +459,5 @@ Finally, compute a majority-rule consensus tree. The batch file for this
 is:
 
 > \#nexus\
-> begin PAUP21;\
+> begin paup;\
 > log file=bootstrapconsensus.log;\
