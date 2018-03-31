@@ -399,7 +399,7 @@ end ;</p>
 <p>If the test is significant, there may be conflict due to different signals (horizontal transfer at one locus, for example) or due to a more mundane problem in the data. To rule the latter out, first create all possible charpartitions to compare pairs of loci. Then do the ILD test again for each charparitition, excluding charsets not in the charpartition being examined. For example, if we have three charsets called 28s, coI, and ef1, a batch file would be:</p>
 <blockquote>
 <p>#nexus<br />
-begin paup;<br />
+begin PAUP21;<br />
 log file=pairwiseILD.log;<br />
 charpartition noef1 = 28s:28s, coI:coI;<br />
 charpartition no28s = coI:coI, ef1:ef1;<br />
@@ -445,7 +445,7 @@ end;</p>
 <p>These searches will run longer than the initial search. A way to speed up the search while covering more of tree space is to increase the number of addition replicates but reducing the thoroughness of the search for each replicate. We might do this if we believe there may be islands of good trees PAUP is missing. A sample batch file follows. You may want to change the nreps and timelimit.</p>
 <blockquote>
 <p>#nexus<br />
-begin paup;<br />
+begin PAUP21;<br />
 log file=hsearch.tlimit.log;<br />
 set maxtrees=10000 increase=auto;<br />
 hsearch rstatus=no limitperrep=yes nreps=5000 randomize=trees timelimit=5 savereps=yes;<br />
@@ -467,7 +467,7 @@ stopcmd &quot;savetrees file=mydata.best.tre&quot;;</p>
 <p>For the search itself he search can be stopped before completing all the bootstrap replicates; if doing multiple searches, the treefile name should be changed for each search. You may want to change the number of bootstrap replicates (currently set at 500) and the number of random taxon additions per bootstrap replicate (currently set at a low value of 10):</p>
 <blockquote>
 <p>#nexus<br />
-begin paup;<br />
+begin PAUP21;<br />
 set storetreewts=yes;<br />
 bootstrap nreps=<strong>500</strong> treefile=bootstrap1.tre replace=no/ start=stepwise addseq=random nreps=<strong>10</strong> savereps=no randomize=addseq hold=1 swap=tbr multrees=yes;<br />
 end;</p>
@@ -475,14 +475,14 @@ end;</p>
 <p>Load all the bootstrap trees, making sure to store tree weights (an option which should have been made the default by the above batch file), to load all blocks, and NOT to eliminate duplicate trees. Executing the following batch file should set all these options and load the trees saved as bootstrap1.tre in the active folder.</p>
 <blockquote>
 <p>#nexus<br />
-begin paup;<br />
+begin PAUP21;<br />
 gettrees allblocks=yes duptrees=keep storetreewts=yes mode=7 file=bootstrap1.tre;<br />
 end;</p>
 </blockquote>
 <p>Finally, compute a majority-rule consensus tree. The batch file for this is:</p>
 <blockquote>
 <p>#nexus<br />
-begin paup;<br />
+begin PAUP21;<br />
 log file=bootstrapconsensus.log;<br />
 </p>
 </blockquote>
