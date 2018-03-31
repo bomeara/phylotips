@@ -1,29 +1,15 @@
 ---
-title: "PAUP batch files"
-author: "Brian O'Meara"
-date: '2018-03-30'
-comment: no
-contentCopyright: no
-categories: paup
-description: ''
-flowchartDiagrams:
-  enable: no
-  options: ''
-hiddenFromHomePage: no
-keywords: []
-lastmod: '2018-03-30T22:55:35-04:00'
-mathjax: no
-mathjaxEnableSingleDollar: no
-postMetaInFooter: no
-reward: no
-sequenceDiagrams:
-  enable: no
-  options: ''
+title: PAUP batch files
+author: Brian O'Meara
+date: '2018-03-31'
 slug: paup-batch-files
-tags: paup
-autoCollapseToc: no
-toc: no
+categories:
+  - paup
+tags:
+  - paup
+  - batch file
 ---
+
 
 This is a [backup](https://web.archive.org/web/20031220172052/http://www.brianomeara.info:80/phylogenetics.html) courtesy of the Internet Archive's [Wayback Machine](https://web.archive.org) of a page I made shortly after graduate school with batch files for PAUP. May they be of some utility to you. 
 
