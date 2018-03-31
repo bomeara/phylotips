@@ -23,6 +23,16 @@ It makes use of a variety of open source projects including:
     </item>
     
     <item>
+      <title>PAUP batch files</title>
+      <link>https://phylotips.info/post/paup-batch-files/</link>
+      <pubDate>Sat, 31 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://phylotips.info/post/paup-batch-files/</guid>
+      <description>This is a backup courtesy of the Internet Archive’s Wayback Machine of a page I made shortly after graduate school with batch files for PAUP. May they be of some utility to you.
+Phylogenetic analysis Each item includes PAUP batch files or commands where appropriate. I wrote this page for the Farrell Lab website, but have included it here as well. This page is mostly useful for the batch files which are on it.</description>
+    </item>
+    
+    <item>
       <title>Intro to this site</title>
       <link>https://phylotips.info/post/intro-to-this-site/</link>
       <pubDate>Sat, 24 Mar 2018 00:00:00 +0000</pubDate>

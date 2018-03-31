@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Paup on PhyloTips: Tips for those using phylogenies in their work</title>
+    <link>https://phylotips.info/tags/paup/</link>
+    <description>Recent content in Paup on PhyloTips: Tips for those using phylogenies in their work</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 31 Mar 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://phylotips.info/tags/paup/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PAUP batch files</title>
+      <link>https://phylotips.info/post/paup-batch-files/</link>
+      <pubDate>Sat, 31 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://phylotips.info/post/paup-batch-files/</guid>
+      <description>This is a backup courtesy of the Internet Archive’s Wayback Machine of a page I made shortly after graduate school with batch files for PAUP. May they be of some utility to you.
+Phylogenetic analysis Each item includes PAUP batch files or commands where appropriate. I wrote this page for the Farrell Lab website, but have included it here as well. This page is mostly useful for the batch files which are on it.</description>
+    </item>
+    
+  </channel>
+</rss>

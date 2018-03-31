@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>PAUP batch files - PhyloTips: Tips for those using phylogenies in their work</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Brian O&#39;Meara" />
+  <meta name="description" content="This is a backup courtesy of the Internet Archive’s Wayback Machine of a page I made shortly after graduate school with batch files for PAUP. May they be of some utility to you.
+Phylogenetic analysis Each item includes PAUP batch files or commands where appropriate. I wrote this page for the Farrell Lab website, but have included it here as well. This page is mostly useful for the batch files which are on it." />
+
+  <meta name="keywords" content="R, phylogeny, help" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.37.1" />
+
+
+<link rel="canonical" href="https://phylotips.info/post/paup-batch-files/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+<link href="/dist/even.min.css?v=3.1.1" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+
+
+
+<meta property="og:title" content="PAUP batch files" />
+<meta property="og:description" content="This is a backup courtesy of the Internet Archive’s Wayback Machine of a page I made shortly after graduate school with batch files for PAUP. May they be of some utility to you.
+Phylogenetic analysis Each item includes PAUP batch files or commands where appropriate. I wrote this page for the Farrell Lab website, but have included it here as well. This page is mostly useful for the batch files which are on it." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://phylotips.info/post/paup-batch-files/" />
+
+
+
+<meta property="article:published_time" content="2018-03-31T00:00:00&#43;00:00"/>
+
+<meta property="article:modified_time" content="2018-03-31T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="PAUP batch files">
+<meta itemprop="description" content="This is a backup courtesy of the Internet Archive’s Wayback Machine of a page I made shortly after graduate school with batch files for PAUP. May they be of some utility to you.
+Phylogenetic analysis Each item includes PAUP batch files or commands where appropriate. I wrote this page for the Farrell Lab website, but have included it here as well. This page is mostly useful for the batch files which are on it.">
+
+
+<meta itemprop="datePublished" content="2018-03-31T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-03-31T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="3090">
+
+
+
+<meta itemprop="keywords" content="paup,batch file," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="PAUP batch files"/>
+<meta name="twitter:description" content="This is a backup courtesy of the Internet Archive’s Wayback Machine of a page I made shortly after graduate school with batch files for PAUP. May they be of some utility to you.
+Phylogenetic analysis Each item includes PAUP batch files or commands where appropriate. I wrote this page for the Farrell Lab website, but have included it here as well. This page is mostly useful for the batch files which are on it."/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">PhyloTips</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">PhyloTips</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">PAUP batch files</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2018-03-31 </span>
+        <div class="post-category">
+            
+              <a href="/categories/paup/"> paup </a>
+            
+          </div>
+        <span class="more-meta"> 3090 words </span>
+        <span class="more-meta"> 15 mins read </span>
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  
+  <div class="post-toc-content always-active">
+    
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <p>This is a <a href="https://web.archive.org/web/20031220172052/http://www.brianomeara.info:80/phylogenetics.html">backup</a> courtesy of the Internet Archive’s <a href="https://web.archive.org">Wayback Machine</a> of a page I made shortly after graduate school with batch files for PAUP. May they be of some utility to you.</p>
+<div id="phylogenetic-analysis" class="section level2">
+<h2>Phylogenetic analysis</h2>
+<p>Each item includes PAUP <a href="#batch">batch files</a> or commands where appropriate. I wrote this page for the Farrell Lab website, but have included it here as well. This page is mostly useful for the batch files which are on it. Some useful references which provide broader overviews of phylogenetics are <em><a href="https://web.archive.org/web/20031220172052/http://www.sinauer.com/Titles/Text/3115.html">Phylogenetic Trees Made Easy</a></em> by Barry Hall, chapters 11 and 12 of the somewhat dated (1996) <em><a href="https://web.archive.org/web/20031220172052/http://www.sinauer.com/Titles/frhillis.htm">Molecular Systematics, 2nd Edition</a></em>, edited by David Hillis, Craig Moritz, and Barbara Mable, and the recently updated <a href="https://web.archive.org/web/20031220172052/http://www.bioinf.org/molsys/index.html">Molecular Systematics</a> website. PAUP also has a <a href="https://web.archive.org/web/20031220172052/http://paup.csit.fsu.edu/downl.html#Anchor-58521">quick start tutorial</a> on its <a href="https://web.archive.org/web/20031220172052/http://paup.csit.fsu.edu/">web page</a> as well as a useful <a href="https://web.archive.org/web/20031220172052/http://pauptech.si.edu/%7Epaupforum/">discussion group</a> for asking questions. Useful software links can be found on my <a href="/web/20031220172052/http://www.brianomeara.info:80/links.html">general links</a> page. Please direct any comments about this page to <a href="https://web.archive.org/web/20031220172052/mailto:bcomeara@ucdavis.edu">me</a>. This page was last updated on August 20, 2002 , though most of its information has not been updated since June 10, 2002.</p>
+<p>Each step listed individually<br />
+<a href="#nexus">NEXUS file preparation</a><br />
+<a href="#batch">Batch files</a><br />
+<a href="#ild">Testing for homogeneity, what to do if this fails</a><br />
+<a href="#saturation">Saturation plots and weighting</a><br />
+<a href="#exhaustive">Exhaustive and branch-and-bound searches</a> (&lt;13 taxa)<br />
+<a href="#heuristic">Heuristic searches</a><br />
+<a href="#ratchet">Parsimony ratchet</a><br />
+<a href="#bootstrap">Bootstrap searches</a><br />
+<a href="#decay">Decay indices, including partitioned Bremer support</a><br />
+<a href="#bayes"></a><a href="phylogenetics.html#likelihood">Choosing a likelihood model</a><br />
+<a href="#clock">Testing for a molecular clock<br />
+</a><a href="#Calibrate1">Calibrating using a published calibration</a><br />
+<a href="#Calibrate2">Calibrating using fossil data</a><br />
+<a href="#AgeErrors">Computing error bars on node times</a><br />
+<a href="#bayes">Bayesian searches</a> (MrBayes)<br />
+<a href="#hypothesis">Hypothesis testing</a><br />
+<a href="#Draw">Tree drawing and editing</a><br />
+</p>
+<p><span id="nexus"></span>NEXUS file preparation</p>
+<ol style="list-style-type: decimal">
+<li>Open the NEXUS file with <a href="https://web.archive.org/web/20031220172052/http://phylogeny.arizona.edu/macclade/macclade.html">MacClade</a> 4.03 or higher.</li>
+<li>Select characters for one locus by shift-clicking on characters for that locus.</li>
+<li>Under the Characters menu, choose &quot;Character Set...&quot; then &quot;Store Character Set&quot;.</li>
+<li>Name this set by the name of the locus (omit spaces)</li>
+<li>Do the same for other loci.</li>
+<li>Make sure that the genetic code is correct for your loci by going to &quot;Genetic Code...&quot; in the Characters menu. For mixed nuclear and mitochondrial loci, choose <em>Drosophila</em> mtDNA.</li>
+<li>For protein-coding loci, select all the characters in one exon, then go to Characters -&gt; &quot;Codon Positions&quot; -&gt; &quot;Calculate Positions...&quot;. Select the option &quot;Choose to minimize stop codons&quot;.</li>
+<li>Select non-protein-coding regions (i.e., introns, rDNA) and go to Characters -&gt; &quot;Codon Positions&quot; -&gt; &quot;Non-coding&quot;.</li>
+<li>Go to Taxa -&gt; &quot;Taxon list&quot;.</li>
+<li>Move the outgroup taxa so that they are next to each other by dragging the number to the left of the taxon name.</li>
+<li>Select the whole group of outgroup taxa by shift-clicking on their numbers.</li>
+<li>Go to Taxa -&gt; &quot;Taxon sets&quot; -&gt; &quot;Store taxon set&quot;.</li>
+<li>Name this taxon set &quot;outgroup&quot;.</li>
+<li>Do the same for other taxa you would like in a set. Feel free to change the order of the taxa to do this.</li>
+<li>When you are done, click on the icon that looks like a Mayan pyramid, then click on one of the taxa. This alphabetizes the taxa, making later steps in PAUP easier.</li>
+<li>Go to File -&gt; &quot;Print list&quot; to print the list, along with taxon numbers.</li>
+<li>Save the file and quit MacClade.</li>
+<li>Open PAUP 4.0b8 or higher. PAUP often has updates, so check its <a href="https://web.archive.org/web/20031220172052/http://paup.csit.fsu.edu/">website</a> to make sure you are using a recent version. Also check for <a href="https://web.archive.org/web/20031220172052/http://paup.csit.fsu.edu/problems.html">bug reports</a>.</li>
+<li>From within PAUP, open the file you just saved with MacClade. Choose &quot;Edit&quot;, not &quot;Execute&quot;.</li>
+<li>Scroll down to below the data matrix.</li>
+<li>NEXUS files are arranged in blocks, starting with &quot;BEGIN ###;&quot; and ending with &quot;END;&quot;. Go to the SETS block [skip this and the next 2 instructions if you have only one locus or no coding regions].</li>
+<li>Start a new line. Type &quot;CHARSET&quot;, a space, then &quot;###first = &quot;, replacing ### with the name of your first coding locus.</li>
+<li>Look for the CODONS block. You should see something within this block that looks like &quot;1: 1-1300\3 1400-2700\3&quot;, with the numbers changed. If your first coding locus is 1302 long, for example, copy the &quot;1-1300\3&quot;and place it after the equals sign in the line you just created. If your first coding locus extends all the way to 2700 in this example, just with an intron in the middle, copy the entire &quot;1-1300\3 1400-2700\3&quot; to after the equals sign in the line you just created.</li>
+<li>Type a semicolon at the end of this line after pasting in the numbers.</li>
+<li>You have just created a character set containing all the bases with the first codon position from your first coding locus. Repeat the same process for other loci, all three positions. The general format is &quot;CHARSET charset_name = character_numbers;&quot;.</li>
+<li>You can do the same thing with sets of taxa. You should already have a taxset named &quot;outgroup&quot;. You can make other taxsets using the format &quot;TAXSET taxset_name = taxon_numbers;&quot;. The taxon number is the same as the number on the taxon's left in MacClade's taxon list window, which you have printed out. It's also the order of taxa within the DATA block.</li>
+<li>Create a PAUP block. Make sure this is after one of the &quot;end;&quot; lines but before the next &quot;Begin ###;&quot; lines. The format is &quot;Begin PAUP;&quot; skip a few lines, then &quot;end;&quot;. Don't forget the semicolons.</li>
+<li><span id="charpartition"></span>Within the PAUP block, create a character partition. The general format is &quot;CHARPARTITION [partition name] = [charset name 1]:[charset name 1], [charset name 2]:[charset name 2], [charset name 3]:[charset name 3];&quot; For example, if the data consists of 28S and COI sequence, you would have a charset called 28s, another charset called coI, and the charparition command would be &quot;CHARPARTITION locus = 28s:28s, coI:coI;&quot; This is used in ILD tests.</li>
+<li>Within the PAUP block, paste the following text:<br />
+<br />
+outgroup outgroup /only; set maxtrees=5000 increase=auto autoclose=no torder=right tcompress=yes taxlabels=full storebrlens=yes storetreewts=yes outroot=paraphyl;<br />
+<br />
+This sets the outgroup to be whatever you determined in the outgroup taxset, sets a reasonable starting maxtrees number, and sets other PAUP preferences to useful ones for starting a search. Other PAUP commands can be included in the PAUP block as well.</li>
+<li>You may find it useful to keep a running log of all analyses done. This can be helpful in checking what p-values were of various tests, how many replicates were done in a particular search, etc. To do this, paste the following text within the PAUP block:<br />
+<br />
+log file=[name] append=yes replace=no;<br />
+<br />
+If you do this, delete the log commands from other batch files (see below) so that everything is logged to one file.<br />
+</li>
+</ol>
+<p><span id="batch"></span>Batch files</p>
+<p>Batch files are ways to give PAUP commands without going through the menus (Mac) or entering items one at a time in the command line (all platforms). For example, you could set up a PAUP batch file which would do a heuristic search saving the best trees from each addition sequence replicate, save these trees to a file, filter for the best trees, and finally save these best trees to a second tree file. Batch files are also a good way to ensure consistency between searches -- for example. you won't have to remember if you used 5 or 10 addition sequence replicates per bootstrap replicate, as that information will be in the batch file. A batch file has the following format:</p>
+<p>#nexus [Tells PAUP that this is a NEXUS file]<br />
+begin PAUP; [Starts the PAUP block]<br />
+<em>[PAUP commands]</em>; [Gives PAUP instructions on what to do -- the same thing you enter in the command line]<br />
+end; [Ends the PAUP block]</p>
+<p>To create a batch file, first create a new document within PAUP or in some other text editor (such as SimpleText). Then type &quot;#nexus&quot; in the first line and &quot;begin paup;&quot; in the second. After that, include the PAUP commands you want -- PAUP's command reference document, available from the <a href="https://web.archive.org/web/20031220172052/http://paup.csit.fsu.edu/downl.html">downloads</a> section of its <a href="https://web.archive.org/web/20031220172052/http://paup.csit.fsu.edu/">website</a>, is invaluable in constructing these. Finally, write &quot;end;&quot; at the end of the document. Save the document. Now, executing the document, the same way you execute a data file, will start the commands running.</p>
+<p>All the batch files on this website can be copied into a new PAUP document and executed. Several of the batch files have places to insert the name of a file or set, often appearing as [name]. Make sure that the brackets are removed: for example, if the file is called tree1, &quot;file=[name]&quot; should become &quot;file=tree1&quot;. PAUP makes batch file troubleshooting easy -- if there is a problem with the file, PAUP will open the file and put the cursor where the error occured. PAUP does not see anything in brackets, so comments written there will not affect analyses. The only two exceptions to this are: 1) if the first character within the bracket is an exclamation point, PAUP will display the contents in the display buffer; and 2) Trees can have a [&amp;U] or [&amp;R] to tell PAUP if they are rooted or not.</p>
+<p><span id="ild"></span>Testing for homogeneity, what to do if this fails</p>
+<p>We use the partition homogeneity/incongruence-length difference test implemented in PAUP to determine if different partitions of the data (typically different loci) have significantly different signals. To do this, you should first have a PAUP data file with a <a href="#charpartition">character partition</a> defined. Then, choose Partition Homogeneity Test under the Analysis window to perform the test. Alternatively, you could use the following batch file, which will start a log and perform the test. You should replace [name] with the name of your partition (remove the brackets).</p>
+<blockquote>
+<p>#nexus<br />
+Begin PAUP;<br />
+log file=ildtest.log;<br />
+hompart partition=[name] nreps=100 / start=stepwise addseq=random nreps=10 savereps=no randomize=addseq rstatus=no hold=1 swap=tbr multrees=yes;<br />
+log stop;<br />
+end ;</p>
+</blockquote>
+<p>This batch file sets the number of ILD replicates at 100, with the number of random taxon addition replicates at 10 per ILD replicate. As in everything else on this page, these are just starting suggestions, not necessarily the best numbers for your data.</p>
+<p>If the test is non-significant, there is no significant conflict between the partitions. We then include all partitions in subsequent analyses.</p>
+<p>If the test is significant, there may be conflict due to different signals (horizontal transfer at one locus, for example) or due to a more mundane problem in the data. To rule the latter out, first create all possible charpartitions to compare pairs of loci. Then do the ILD test again for each charparitition, excluding charsets not in the charpartition being examined. For example, if we have three charsets called 28s, coI, and ef1, a batch file would be:</p>
+<blockquote>
+<p>#nexus<br />
+begin paup;<br />
+log file=pairwiseILD.log;<br />
+charpartition noef1 = 28s:28s, coI:coI;<br />
+charpartition no28s = coI:coI, ef1:ef1;<br />
+charpartition nocoI = 28s:28s, ef1:ef1;<br />
+exclude ef1 /only;<br />
+[!ILD between 28S and COI]<br />
+hompart partition=noef1 nreps=100;<br />
+exclude 28s /only;<br />
+[!ILD between COI and EF1]<br />
+hompart partition=no28s nreps=100;<br />
+exclude coI /only;<br />
+[!ILD between 28S and EF1]<br />
+hompart partition=nocoI nreps=100;<br />
+include all;<br />
+log stop;<br />
+end;</p>
+</blockquote>
+<p>Note that the comments in brackets which start with an exclamation point will be displayed when PAUP gets to that part of the batch file.</p>
+<p>If comparisons between ef1 and either of the other two loci are significant, but the comparison between 28sand coI are not significantly different, you can begin to suspect that ef1 is different from the other two genes. You could then go back to make sure that the sequences are all labeled correctly as to taxon or that the sequences all come from the same copy of the gene.</p>
+<p>If a problem cannot be found in the sequences, the apparent conflict may be real. Our lab's general approach is to analyze all the sequences together, as we normally do, and do additional, separate analyses for each locus. However, there is currently great debate within phylogenetics on what to do in this case. Some people will analyze all the data together regardless of apparent conflict, others will only analyze together if there is no conflict.<br />
+</p>
+<p><span id="saturation"></span>Saturation</p>
+<p>Saturated data refers to data where the phylogenetic signal is overwhelmed by multiple changes at each site. Note that data which is saturated at deep levels may still be useful at more recent divergences. Saturated data can be relatively harmless, merely making tree searches take longer and potentially reducing the decisiveness of the dataset. Some workers include all data, regardless of saturation, in the hopes that there is still some phylogenetic signal amidst the noise. However, saturated data can pose problems. The data could increase variance in branch lengths, potentially raising the problem of long branch attraction. This could also make clocklike data reject a clock. The saturated data could require a more complex likelihood model than the dataset would without the saturated data. Finally, the saturated data could adversely affect the liklihood parameter estimates applied to all sites, which may affect the tree chosen. For these reasons, we often either exclude saturated data (i.e., excluding mitochondrial DNA third codon positions) or convert it to less-saturated forms (i.e., converting mitochondrial DNA sequence to amino acid sequence). Detecting saturated data is a somewhat subjective process. One common approach is to graph the transition/transversion ratio for pairs of sequences versus number of transversions between those pairs of sequences. This will eventually decline to an equilibrium value, governed by the base frequencies, at saturation. Graphs for character sets which show a sharp decline and long horizontal trend of data suggest saturation much more than graphs which show a gradual decline in this ratio over all transversions. Character sets with lower effective number of states (for example, third codon positions of mitochondrial DNA in insects, which often shows strong AT bias) are more likely to show saturation than character sets with more balanced base composition.</p>
+<p><span id="exhaustive"></span>Exhaustive and branch-and-bound searches (&lt;13 taxa)</p>
+<p>These strategies are guaranteed to find the optimal tree but take too long for more than a few taxa. As a result, we seldom have occassion to use them.</p>
+<p><span id="heuristic"></span>Heuristic searches</p>
+<p>Heuristic searches are not guaranteed to find the globally-optimal tree, but they can work for many more taxa than exhaustive or branch-and-bound searches. A good starting <a href="#batch">batch file</a> is:</p>
+<blockquote>
+<p>#nexus<br />
+begin PAUP;<br />
+log file=hsearch1.log;<br />
+set autoclose=yes;<br />
+hsearch start=stepwise addseq=random nreps=<strong>100</strong> savereps=yes randomize=addseq rstatus=yes hold=1 swap=tbr multrees=yes;<br />
+savetrees file=hsearch1.all.tre;<br />
+filter best=yes permdel=yes;<br />
+savetrees file=hsearch1.best.tre;<br />
+log stop;<br />
+end;</p>
+</blockquote>
+<p>This batch file will do a heuristic search, save all the trees found in each random addition sequence replicate in the hsearch1.all.tre file, then filter for the best trees overall and save them in an hsearch1.best.tre file. PAUP will also output a tree-island profile. A &quot;tree-island&quot; is a group of trees which cannot be reached through branchswapping from a different group of trees. Ideally, all the trees will be on one island which will have been hit every time, no matter what starting tree or taxon addition order. If this is the case, the treespace is fairly simple and we would probably move on to <a href="#bootstrap">bootstrapping</a>. If the island(s) with the best trees was hit nearly all the time, we'd probably be satisfied, as well. However, if the best trees are not recovered in many of the searches, we would need to search further.</p>
+<p>We use a variety of strategies for these next searches. The first strategy is to simply increase the number of addition sequence replicates. To do this, change the nreps=100 in the batch file above to a higher number, perhaps nreps=1000. To avoid confusion, we may also want to replace &quot;hsearch1&quot; with &quot;hsearch2&quot; wherever it appears before running the search again.</p>
+<p>Another strategy is to start from random trees, rather than random taxon addition. On the above batch file, change the randomize=addseq to randomize=trees, change the &quot;hsearch#&quot; as above, and search again, with nreps to taste.</p>
+<p>These searches will run longer than the initial search. A way to speed up the search while covering more of tree space is to increase the number of addition replicates but reducing the thoroughness of the search for each replicate. We might do this if we believe there may be islands of good trees PAUP is missing. A sample batch file follows. You may want to change the nreps and timelimit.</p>
+<blockquote>
+<p>#nexus<br />
+begin paup;<br />
+log file=hsearch.tlimit.log;<br />
+set maxtrees=10000 increase=auto;<br />
+hsearch rstatus=no limitperrep=yes nreps=5000 randomize=trees timelimit=5 savereps=yes;<br />
+savetrees file=hsearch.tlimit.all.tre;<br />
+filter best=yes permdel=yes;<br />
+savetrees file=hsearch.tlimit.best.tre;<br />
+end;</p>
+</blockquote>
+<p>The parsimony ratchet (below) can be useful in searching treespace broadly, as well.</p>
+<p><span id="ratchet"></span>Parsimony ratchet</p>
+<p>The parsimony ratchet is a way to search treespace by reweights characters for some iterations of a search. It is especially good for searches with large numbers of taxa. It is described by Kevin Nixon (Nixon, K. C. 1999. &quot;The Parsimony Ratchet, a new method for rapid parsimony analysis.&quot; <em>Cladistics</em> 15: 407-414). Derek Sikes and Paul Lewis have written a program, called <a href="https://web.archive.org/web/20031220172052/http://viceroy.eeb.uconn.edu/paupratweb/pauprat.htm">PaupRat</a>, which generates batch files to implement this search strategy in PAUP. A few notes on the use of this: 1) It's better to do several searches of a moderate number of nreps in each search (create a new ratchet file for each search) than one search with many nreps; 2) It's useful to insert the commands:</p>
+<blockquote>
+<p>stopcmd &quot;filter best=yes permdel=yes&quot;;<br />
+stopcmd &quot;savetrees file=mydata.best.tre&quot;;</p>
+</blockquote>
+<p>into the setup.nex file before the stopcmd <code>quit</code>; to automatically filter for the best trees.</p>
+<p><span id="bootstrap"></span>Bootstrap searches</p>
+<p>Bootstrap searches can take quite some time. One useful feature of PAUP is the ability to search on multiple computers or on several different occasions and combine the results. The key to this is saving the bootstrap trees from each search and then loading them all together, then computing the consensus tree using the tree weights. You must be sure to keep the bootstrap search settings (except for the number of bootstrap replicates) the same between searches for this to be valid. This can be done through the menus (make sure to hit the &quot;save trees to file&quot; checkbox in the bootstrap menu), or through the batch files (below).</p>
+<p>For the search itself he search can be stopped before completing all the bootstrap replicates; if doing multiple searches, the treefile name should be changed for each search. You may want to change the number of bootstrap replicates (currently set at 500) and the number of random taxon additions per bootstrap replicate (currently set at a low value of 10):</p>
+<blockquote>
+<p>#nexus<br />
+begin paup;<br />
+set storetreewts=yes;<br />
+bootstrap nreps=<strong>500</strong> treefile=bootstrap1.tre replace=no/ start=stepwise addseq=random nreps=<strong>10</strong> savereps=no randomize=addseq hold=1 swap=tbr multrees=yes;<br />
+end;</p>
+</blockquote>
+<p>Load all the bootstrap trees, making sure to store tree weights (an option which should have been made the default by the above batch file), to load all blocks, and NOT to eliminate duplicate trees. Executing the following batch file should set all these options and load the trees saved as bootstrap1.tre in the active folder.</p>
+<blockquote>
+<p>#nexus<br />
+begin paup;<br />
+gettrees allblocks=yes duptrees=keep storetreewts=yes mode=7 file=bootstrap1.tre;<br />
+end;</p>
+</blockquote>
+<p>Finally, compute a majority-rule consensus tree. The batch file for this is:</p>
+<blockquote>
+<p>#nexus<br />
+begin paup;<br />
+log file=bootstrapconsensus.log;<br />
+</p>
+</blockquote>
+</div>
+
+    </div>
+
+    
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Brian O'Meara</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">2018-03-31</span>
+  </p>
+  
+  
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          
+          <a href="/tags/paup/">paup</a>
+          
+          <a href="/tags/batch-file/">batch file</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/intro-to-this-site/">
+            <span class="next-text nav-default">Intro to this site</span>
+            <span class="prev-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:omeara.brian@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://twitter.com/omearabrian" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.linkedin.com/in/brian-o-meara-62a008104/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://github.com/bomeara" class="iconfont icon-github" title="github"></a>
+  <a href="https://phylotips.info/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    
+      2017 - 
+    2018
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Brian O'Meara</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/lib/highlight/highlight.pack.js?v=20171001"></script><script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+<script type="text/javascript" src="/dist/even.min.js?v=3.1.1"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
