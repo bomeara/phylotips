@@ -379,7 +379,6 @@ search for each replicate. We might do this if we believe there may be
 islands of good trees PAUP is missing. A sample batch file follows. You
 may want to change the nreps and timelimit.
 
-> ::: {align="left"}
 > \#nexus\
 > begin paup;\
 > log file=hsearch.tlimit.log;\
@@ -390,12 +389,10 @@ may want to change the nreps and timelimit.
 > filter best=yes permdel=yes;\
 > savetrees file=hsearch.tlimit.best.tre;\
 > end;
-> :::
 
-::: {align="left"}
 The parsimony ratchet (below) can be useful in searching treespace
 broadly, as well.
-:::
+
 
 []{#ratchet}Parsimony ratchet
 

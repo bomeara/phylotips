@@ -444,7 +444,6 @@ end;</p>
 <p>Another strategy is to start from random trees, rather than random taxon addition. On the above batch file, change the randomize=addseq to randomize=trees, change the &quot;hsearch#&quot; as above, and search again, with nreps to taste.</p>
 <p>These searches will run longer than the initial search. A way to speed up the search while covering more of tree space is to increase the number of addition replicates but reducing the thoroughness of the search for each replicate. We might do this if we believe there may be islands of good trees PAUP is missing. A sample batch file follows. You may want to change the nreps and timelimit.</p>
 <blockquote>
-<div data-align="left">
 <p>#nexus<br />
 begin paup;<br />
 log file=hsearch.tlimit.log;<br />
@@ -454,11 +453,8 @@ savetrees file=hsearch.tlimit.all.tre;<br />
 filter best=yes permdel=yes;<br />
 savetrees file=hsearch.tlimit.best.tre;<br />
 end;</p>
-</div>
 </blockquote>
-<div data-align="left">
 <p>The parsimony ratchet (below) can be useful in searching treespace broadly, as well.</p>
-</div>
 <p><span id="ratchet"></span>Parsimony ratchet</p>
 <p>The parsimony ratchet is a way to search treespace by reweights characters for some iterations of a search. It is especially good for searches with large numbers of taxa. It is described by Kevin Nixon (Nixon, K. C. 1999. &quot;The Parsimony Ratchet, a new method for rapid parsimony analysis.&quot; <em>Cladistics</em> 15: 407-414). Derek Sikes and Paul Lewis have written a program, called <a href="https://web.archive.org/web/20031220172052/http://viceroy.eeb.uconn.edu/paupratweb/pauprat.htm">PaupRat</a>, which generates batch files to implement this search strategy in PAUP. A few notes on the use of this: 1) It's better to do several searches of a moderate number of nreps in each search (create a new ratchet file for each search) than one search with many nreps; 2) It's useful to insert the commands:</p>
 <blockquote>
