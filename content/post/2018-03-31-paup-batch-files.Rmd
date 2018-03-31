@@ -11,7 +11,7 @@ tags:
 ---
 
 
-This is a [backup](https://web.archive.org/web/20031220172052/http://www.brianomeara.info:80/phylogenetics.html) courtesy of the Internet Archive's [Wayback Machine](https://web.archive.org) of a page I made shortly after graduate school with batch files for PAUP. They haven't been updated since 2002, so much is out of date (and my views on best practices have changed somewhat after the whole graduate school -> postdoc -> faculty career stages that happened after I wrote this) but this may be of some utility to you. 
+This is a [backup](https://web.archive.org/web/20031220172052/http://www.brianomeara.info:80/phylogenetics.html) courtesy of the Internet Archive's [Wayback Machine](https://web.archive.org) of a page I made shortly after graduate school with batch files for [PAUP](http://paup.phylosolutions.com). They haven't been updated since 2002, so much is out of date (and my views on best practices have changed somewhat after the whole graduate school -> postdoc -> faculty career stages that happened after I wrote this) but this may be of some utility to you. 
 
 ## Phylogenetic analysis
 
