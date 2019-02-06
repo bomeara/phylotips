@@ -26,10 +26,10 @@
 
 
 
-<meta name="generator" content="Hugo 0.37.1" />
+<meta name="generator" content="Hugo 0.54.0" />
 
 
-<link rel="canonical" href="https://phylotips.info/post/my-ultrametric-tree-is-not-ultrametric/" />
+<link rel="canonical" href="/post/my-ultrametric-tree-is-not-ultrametric/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -52,23 +52,9 @@
 <meta property="og:title" content="My ultrametric tree is not ultrametric" />
 <meta property="og:description" content="Getting a tree with branch lengths proportional to time is a key step for many methods. With NSF’s generous assistance, we’re working on methods to make this easier (the Datelife.org website, the datelife R package), but one can look for chronograms at TreeBase and Open Tree of Life, or even make your own using r8s, treepl, Beast, RevBayes, or more. The convention in phylogenetics is to call trees with equal root to tip lengths “ultrametric." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://phylotips.info/post/my-ultrametric-tree-is-not-ultrametric/" />
-
-
-
+<meta property="og:url" content="/post/my-ultrametric-tree-is-not-ultrametric/" />
 <meta property="article:published_time" content="2018-03-24T00:00:00&#43;00:00"/>
-
 <meta property="article:modified_time" content="2018-03-24T00:00:00&#43;00:00"/>
-
-
-
-
-
-
-
-
-
-
 
 <meta itemprop="name" content="My ultrametric tree is not ultrametric">
 <meta itemprop="description" content="Getting a tree with branch lengths proportional to time is a key step for many methods. With NSF’s generous assistance, we’re working on methods to make this easier (the Datelife.org website, the datelife R package), but one can look for chronograms at TreeBase and Open Tree of Life, or even make your own using r8s, treepl, Beast, RevBayes, or more. The convention in phylogenetics is to call trees with equal root to tip lengths “ultrametric.">
@@ -177,7 +163,10 @@
 
     
     <div class="post-content">
-      <p>Getting a tree with branch lengths proportional to time is a key step for many methods. With NSF’s generous assistance, we’re working on methods to make this easier (the <a href="http://datelife.org">Datelife.org</a> website, the <a href="https://github.com/phylotastic/datelife">datelife</a> R package), but one can look for chronograms at <a href="http://treebase.org">TreeBase</a> and <a href="https://tree.opentreeoflife.org/">Open Tree of Life</a>, or even make your own using r8s, treepl, Beast, RevBayes, or more. The convention in phylogenetics is to call trees with equal root to tip lengths “ultrametric.” A tree with branch lengths proportional to time (a “chronogram”) with all taxa occurring at the same time point will be ultrametric, but one can have ultrametric trees where branch lengths don’t represent time (such as a tree from UPGMA) or a tree with branch lengths proportional to time but where the root to tip lenghts are not all the same (such as a tree with organisms sampled at different times, whether it is a phylogeny of sauropods or of HIV through time). Many approaches test for whether trees are ultrametric before use: you might get a “‘phy’ must be ultrametric” error if a tree is not ultrametric.</p>
+      
+
+
+<p>Getting a tree with branch lengths proportional to time is a key step for many methods. With NSF’s generous assistance, we’re working on methods to make this easier (the <a href="http://datelife.org">Datelife.org</a> website, the <a href="https://github.com/phylotastic/datelife">datelife</a> R package), but one can look for chronograms at <a href="http://treebase.org">TreeBase</a> and <a href="https://tree.opentreeoflife.org/">Open Tree of Life</a>, or even make your own using r8s, treepl, Beast, RevBayes, or more. The convention in phylogenetics is to call trees with equal root to tip lengths “ultrametric.” A tree with branch lengths proportional to time (a “chronogram”) with all taxa occurring at the same time point will be ultrametric, but one can have ultrametric trees where branch lengths don’t represent time (such as a tree from UPGMA) or a tree with branch lengths proportional to time but where the root to tip lenghts are not all the same (such as a tree with organisms sampled at different times, whether it is a phylogeny of sauropods or of HIV through time). Many approaches test for whether trees are ultrametric before use: you might get a “‘phy’ must be ultrametric” error if a tree is not ultrametric.</p>
 <p>Some trees aren’t because they lack branch lengths entirely, even though when plotted they look like they have them:</p>
 <pre class="r"><code>set.seed(1859)
 library(ape)
@@ -284,7 +273,7 @@ abline(a=0, b=1, col=&quot;gray&quot;, lwd=0.5)</code></pre>
       <a href="https://twitter.com/omearabrian" class="iconfont icon-twitter" title="twitter"></a>
       <a href="https://www.linkedin.com/in/brian-o-meara-62a008104/" class="iconfont icon-linkedin" title="linkedin"></a>
       <a href="https://github.com/bomeara" class="iconfont icon-github" title="github"></a>
-  <a href="https://phylotips.info/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+  <a href="/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
 </div>
 
 <div class="copyright">
@@ -303,7 +292,7 @@ abline(a=0, b=1, col=&quot;gray&quot;, lwd=0.5)</code></pre>
     &copy; 
     
       2017 - 
-    2018
+    2019
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>

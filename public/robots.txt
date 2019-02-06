@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://phylotips.info/sitemap.xml
+Sitemap: /sitemap.xml

@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on PhyloTips: Tips for those using phylogenies in their work</title>
-    <link>https://phylotips.info/post/</link>
+    <link>/post/</link>
     <description>Recent content in Posts on PhyloTips: Tips for those using phylogenies in their work</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 31 Mar 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://phylotips.info/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>PAUP batch files</title>
-      <link>https://phylotips.info/post/paup-batch-files/</link>
+      <link>/post/paup-batch-files/</link>
       <pubDate>Sat, 31 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://phylotips.info/post/paup-batch-files/</guid>
+      <guid>/post/paup-batch-files/</guid>
       <description>This is a backup courtesy of the Internet Archive’s Wayback Machine of a page I made shortly after graduate school with batch files for PAUP. They haven’t been updated since 2002, so much is out of date (and my views on best practices have changed somewhat after the whole graduate school -&amp;gt; postdoc -&amp;gt; faculty career stages that happened after I wrote this) but this may be of some utility to you.</description>
     </item>
     
     <item>
       <title>Intro to this site</title>
-      <link>https://phylotips.info/post/intro-to-this-site/</link>
+      <link>/post/intro-to-this-site/</link>
       <pubDate>Sat, 24 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://phylotips.info/post/intro-to-this-site/</guid>
-      <description>Welcome to PhyloTips.info. From teaching my PhyloMeth course and working with students and colleagues in general, as well as the great example of Liam Revell’s Phytools Blog, I decided to make a site where I could post tips to deal with problems of people working on phylogenies. Since I mostly use R for this (though this may change as Julia, Python, etc. grow)</description>
+      <guid>/post/intro-to-this-site/</guid>
+      <description>Welcome to PhyloTips.info. From teaching my PhyloMeth course and working with students and colleagues in general, as well as the cool example of Liam Revell’s Phytools Blog, I decided to make a site where I could post tips to deal with problems of people working on phylogenies. Since I mostly use R for this (though this may change as Julia, Python, etc. grow)</description>
     </item>
     
     <item>
       <title>My ultrametric tree is not ultrametric</title>
-      <link>https://phylotips.info/post/my-ultrametric-tree-is-not-ultrametric/</link>
+      <link>/post/my-ultrametric-tree-is-not-ultrametric/</link>
       <pubDate>Sat, 24 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://phylotips.info/post/my-ultrametric-tree-is-not-ultrametric/</guid>
+      <guid>/post/my-ultrametric-tree-is-not-ultrametric/</guid>
       <description>Getting a tree with branch lengths proportional to time is a key step for many methods. With NSF’s generous assistance, we’re working on methods to make this easier (the Datelife.org website, the datelife R package), but one can look for chronograms at TreeBase and Open Tree of Life, or even make your own using r8s, treepl, Beast, RevBayes, or more. The convention in phylogenetics is to call trees with equal root to tip lengths “ultrametric.</description>
     </item>
     

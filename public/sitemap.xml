@@ -1,135 +1,135 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<?xml-stylesheet type="text/xsl" href="https://phylotips.info/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://phylotips.info/about/</loc>
-    <lastmod>2017-08-28T21:41:52+08:00</lastmod>
+    <loc>/about/</loc>
+    <lastmod>2018-08-28T21:41:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://phylotips.info/post/paup-batch-files/</loc>
+    <loc>/post/paup-batch-files/</loc>
     <lastmod>2018-03-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://phylotips.info/post/intro-to-this-site/</loc>
-    <lastmod>2018-03-24T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://phylotips.info/post/my-ultrametric-tree-is-not-ultrametric/</loc>
+    <loc>/post/intro-to-this-site/</loc>
     <lastmod>2018-03-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://phylotips.info/tags/about/</loc>
+    <loc>/post/my-ultrametric-tree-is-not-ultrametric/</loc>
+    <lastmod>2018-03-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/about/</loc>
     <lastmod>2018-03-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://phylotips.info/categories/about/</loc>
+    <loc>/categories/about/</loc>
     <lastmod>2018-03-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://phylotips.info/tags/ape/</loc>
+    <loc>/tags/ape/</loc>
     <lastmod>2018-03-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://phylotips.info/tags/batch-file/</loc>
+    <loc>/tags/batch-file/</loc>
     <lastmod>2018-03-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://phylotips.info/categories/</loc>
+    <loc>/categories/</loc>
     <lastmod>2018-03-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://phylotips.info/tags/chronogram/</loc>
+    <loc>/tags/chronogram/</loc>
     <lastmod>2018-03-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://phylotips.info/tags/geiger/</loc>
+    <loc>/tags/geiger/</loc>
     <lastmod>2018-03-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://phylotips.info/tags/paup/</loc>
+    <loc>/tags/paup/</loc>
     <lastmod>2018-03-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://phylotips.info/categories/paup/</loc>
+    <loc>/categories/paup/</loc>
     <lastmod>2018-03-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://phylotips.info/</loc>
-    <lastmod>2017-08-28T21:41:52+08:00</lastmod>
+    <loc>/</loc>
+    <lastmod>2018-08-28T21:41:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://phylotips.info/post/</loc>
+    <loc>/post/</loc>
     <lastmod>2018-03-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://phylotips.info/tags/r/</loc>
+    <loc>/tags/r/</loc>
     <lastmod>2018-03-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://phylotips.info/categories/r/</loc>
+    <loc>/categories/r/</loc>
     <lastmod>2018-03-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://phylotips.info/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2018-03-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://phylotips.info/tags/ultrametric/</loc>
+    <loc>/tags/ultrametric/</loc>
     <lastmod>2018-03-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>

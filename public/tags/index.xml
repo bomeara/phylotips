@@ -2,84 +2,84 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on PhyloTips: Tips for those using phylogenies in their work</title>
-    <link>https://phylotips.info/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on PhyloTips: Tips for those using phylogenies in their work</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 24 Mar 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://phylotips.info/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About</title>
-      <link>https://phylotips.info/tags/about/</link>
+      <link>/tags/about/</link>
       <pubDate>Sat, 24 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://phylotips.info/tags/about/</guid>
+      <guid>/tags/about/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ape</title>
-      <link>https://phylotips.info/tags/ape/</link>
+      <link>/tags/ape/</link>
       <pubDate>Sat, 24 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://phylotips.info/tags/ape/</guid>
+      <guid>/tags/ape/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Batch File</title>
-      <link>https://phylotips.info/tags/batch-file/</link>
+      <link>/tags/batch-file/</link>
       <pubDate>Sat, 31 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://phylotips.info/tags/batch-file/</guid>
+      <guid>/tags/batch-file/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Chronogram</title>
-      <link>https://phylotips.info/tags/chronogram/</link>
+      <link>/tags/chronogram/</link>
       <pubDate>Sat, 24 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://phylotips.info/tags/chronogram/</guid>
+      <guid>/tags/chronogram/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Geiger</title>
-      <link>https://phylotips.info/tags/geiger/</link>
+      <link>/tags/geiger/</link>
       <pubDate>Sat, 24 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://phylotips.info/tags/geiger/</guid>
+      <guid>/tags/geiger/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Paup</title>
-      <link>https://phylotips.info/tags/paup/</link>
+      <link>/tags/paup/</link>
       <pubDate>Sat, 31 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://phylotips.info/tags/paup/</guid>
+      <guid>/tags/paup/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>https://phylotips.info/tags/r/</link>
+      <link>/tags/r/</link>
       <pubDate>Sat, 24 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://phylotips.info/tags/r/</guid>
+      <guid>/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ultrametric</title>
-      <link>https://phylotips.info/tags/ultrametric/</link>
+      <link>/tags/ultrametric/</link>
       <pubDate>Sat, 24 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://phylotips.info/tags/ultrametric/</guid>
+      <guid>/tags/ultrametric/</guid>
       <description></description>
     </item>
     

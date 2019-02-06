@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on PhyloTips: Tips for those using phylogenies in their work</title>
-    <link>https://phylotips.info/categories/r/</link>
+    <link>/categories/r/</link>
     <description>Recent content in R on PhyloTips: Tips for those using phylogenies in their work</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 24 Mar 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://phylotips.info/categories/r/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>My ultrametric tree is not ultrametric</title>
-      <link>https://phylotips.info/post/my-ultrametric-tree-is-not-ultrametric/</link>
+      <link>/post/my-ultrametric-tree-is-not-ultrametric/</link>
       <pubDate>Sat, 24 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://phylotips.info/post/my-ultrametric-tree-is-not-ultrametric/</guid>
+      <guid>/post/my-ultrametric-tree-is-not-ultrametric/</guid>
       <description>Getting a tree with branch lengths proportional to time is a key step for many methods. With NSF’s generous assistance, we’re working on methods to make this easier (the Datelife.org website, the datelife R package), but one can look for chronograms at TreeBase and Open Tree of Life, or even make your own using r8s, treepl, Beast, RevBayes, or more. The convention in phylogenetics is to call trees with equal root to tip lengths “ultrametric.</description>
     </item>
     

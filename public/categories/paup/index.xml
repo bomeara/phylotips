@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Paup on PhyloTips: Tips for those using phylogenies in their work</title>
-    <link>https://phylotips.info/categories/paup/</link>
+    <link>/categories/paup/</link>
     <description>Recent content in Paup on PhyloTips: Tips for those using phylogenies in their work</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 31 Mar 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://phylotips.info/categories/paup/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/paup/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>PAUP batch files</title>
-      <link>https://phylotips.info/post/paup-batch-files/</link>
+      <link>/post/paup-batch-files/</link>
       <pubDate>Sat, 31 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://phylotips.info/post/paup-batch-files/</guid>
+      <guid>/post/paup-batch-files/</guid>
       <description>This is a backup courtesy of the Internet Archive’s Wayback Machine of a page I made shortly after graduate school with batch files for PAUP. They haven’t been updated since 2002, so much is out of date (and my views on best practices have changed somewhat after the whole graduate school -&amp;gt; postdoc -&amp;gt; faculty career stages that happened after I wrote this) but this may be of some utility to you.</description>
     </item>
     
